@@ -1,0 +1,84 @@
+.stats-aside{
+    color: white;
+}
+.card-player-stat{
+    padding: 1rem;
+    border: 1px solid rgba(169, 169, 169, 0.668);
+    background-color: #05134d95;
+    margin-bottom: 2rem;
+}
+.card-player-stat.asist{
+    background-color: #9424A021;
+}
+.stat-title{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+.best-player-winner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+.img-best-player-winner{
+    width: 140px;
+    border-radius: 100%;
+}
+.icon-team-winner{
+    width: 40px;
+    margin: .5rem;
+}
+.top-3-player-container{
+    display: flex;
+    flex-direction: column;
+}
+.info-player-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+}
+.top-3-player-container .logo-team{
+    width: 40px;
+}
+.player-possition{
+    font-size: 1.7rem;
+    font-weight: bold;
+}
+@media all and (max-width:930px){
+    .stats-aside{
+        order: -1;
+        display: flex;
+        gap: 2rem;
+    }
+    .card-player-stat{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .stat-title{
+        flex-basis: 100%;
+        text-align: center;
+    }
+    .icon-team-winner,.card-player-stat .team-name{
+        display: none;
+    }
+}
+@media all and (max-width:870px) {
+    .stats-aside {
+        flex-wrap: wrap;
+    }
+    .card-player-stat{
+        width: 100%;
+        justify-content: center;
+        gap: 5rem;
+    }
+}

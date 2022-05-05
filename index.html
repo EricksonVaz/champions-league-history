@@ -1,0 +1,820 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Neste projecto eu utilizei apenas html,css e js para criar uma aplicção estatica para mostrar todos os dados da liga dos campeões masculino de futebol epoca 2020/21">
+    <meta name="copyright" content="Erickson Vaz, 2022">
+    <meta name="keywords" content="Portfólio Erickson Vaz, Liga dos campeões masculino, histórico da liga dos campeões">
+    <meta name="author" content="Erickson de Carvalho Vaz">
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta http-equiv="Content-Language" content="pt-PT">
+    <meta name="rating" content="general">
+    <meta name="robots" content="index,follow">
+    <base href="./">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>UCL History 2021/22</title>
+</head>
+<body>
+    <header class="main-header" role="banner">
+        <img src="/img/ucl_white_logo.png" class="logo-ucl-header" alt="logo ucl">
+        <div class="sub-header">
+            <div class="container-season">
+                <h2 class="seasson-select-label">2020/21</h2>
+            </div>
+            <div class="info-city-final">
+                <h2 class="label-city">Route To</h2>
+                <h3 class="city-name">Porto</h3>
+                <div class="more-info-place">
+                    <div class="aditional-info">
+                        <img src="/img/stadium.png" alt="stadium logo">
+                        <p class="label-name">Estádio do Dragão</p>
+                    </div>
+                    <div class="aditional-info">
+                        <img src="/img/global.png" alt="globe icon">
+                        <p class="label-name">Portugal</p>
+                    </div>
+                </div>
+            </div>
+            <div class="info-finalist-teams">
+                <div class="winner-container">
+                    <h2 class="label-winner">Vencedor</h2>
+                    <img src="/img/logos_teams/chelsea.png" alt="">
+                    <span class="team-name">Chelsea</span>
+                </div>
+                <div class="vice-container">
+                    <h2 class="label-vice">2º lugar</h2>
+                    <img src="/img/logos_teams/mancity.png" alt="">
+                    <span class="team-name">Man City</span>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main role="main">
+        <section class="main-section">
+            <div class="filter-fase-container">
+                <button type="button" class="btn-filter-fase active" data-filter="all">Todos</button>
+                <button type="button" class="btn-filter-fase" data-filter="oitavos">Oitavos</button>
+                <button type="button" class="btn-filter-fase" data-filter="quartos">Quartos</button>
+                <button type="button" class="btn-filter-fase" data-filter="meias">Meias</button>
+                <button type="button" class="btn-filter-fase" data-filter="finais">Final</button>
+            </div>
+            <div class="matches-container">
+                <div class="container-final finais filter">
+                    <h3 class="label-fase">Final</h3>
+                    <div class="teams-container">
+                        <div class="team-info-container">
+                            <div class="gol-count-show">
+                            </div>
+                            <div class="team-score-info">
+                                <img src="/img/logos_teams/mancity.png" alt="chelsea icon">
+                                <span class="team-name">Man City</span>
+                            </div>
+                            <span class="result-count">0</span>
+                        </div>
+                        <div class="center-container">
+                            <span class="vs-label">VS</span>
+                            <button type="button" class="btn-highlights">
+                                <img src="/img/play.png" alt="logo play">
+                                Melhores Momentos
+                            </button>
+                        </div>
+                        <div class="team-info-container">
+                            <span class="result-count">1</span>
+                            <div class="team-score-info">
+                                <img src="/img/logos_teams/chelsea.png" alt="chelsea icon">
+                                <span class="team-name">Chelsea</span>
+                            </div>
+                            <div class="gol-count-show">
+                                <img src="/img/football.png" alt="footbal icon">
+                                <span class="player-name">Kai Havertz</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container-pre-final meias filter">
+                    <h3 class="label-fase">Meias Finais</h3>
+                    <div class="table-matche-container">
+                        <h3 class="caption">1º Jogo</h3>
+                        <table class="table-matches">
+                            <thead>
+                                <tr>
+                                    <th>Equipes</th>
+                                    <th>1º Mão</th>
+                                    <th>2º Mão</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/psg.png" alt="">
+                                        <span class="team-name">Paris Saint-Germain</span>
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                </tr>
+                                <tr class="passed">
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/mancity.png" alt="">
+                                        <span class="team-name">Manchester City</span>
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        4
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-matche-container">
+                        <h3 class="caption">2º Jogo</h3>
+                        <table class="table-matches">
+                            <thead>
+                                <tr>
+                                    <th>Equipes</th>
+                                    <th>1º Mão</th>
+                                    <th>2º Mão</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/real.png" alt="">
+                                        <span class="team-name">Real Madrid</span>
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                </tr>
+                                <tr class="passed">
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/chelsea.png" alt="">
+                                        <span class="team-name">Chelsea</span>
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="container-pre-final quartos filter">
+                    <h3 class="label-fase">Quartos de Finais</h3>
+                    <div class="table-matche-container">
+                        <h3 class="caption">1º Jogo</h3>
+                        <table class="table-matches">
+                            <thead>
+                                <tr>
+                                    <th>Equipes</th>
+                                    <th>1º Mão</th>
+                                    <th>2º Mão</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/bayern.png" alt="">
+                                        <span class="team-name">Bayern de Munique</span>
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                </tr>
+                                <tr class="passed">
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/psg.png" alt="">
+                                        <span class="team-name">Paris Saint-Germain (gf)</span>
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-matche-container">
+                        <h3 class="caption">2º Jogo</h3>
+                        <table class="table-matches">
+                            <thead>
+                                <tr>
+                                    <th>Equipes</th>
+                                    <th>1º Mão</th>
+                                    <th>2º Mão</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="passed">
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/mancity.png" alt="">
+                                        <span class="team-name">Manchester City</span>
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        4
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/dortmund.png" alt="">
+                                        <span class="team-name">Borussia Dortmund</span>
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-matche-container">
+                        <h3 class="caption">3º Jogo</h3>
+                        <table class="table-matches">
+                            <thead>
+                                <tr>
+                                    <th>Equipes</th>
+                                    <th>1º Mão</th>
+                                    <th>2º Mão</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="passed">
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/real.png" alt="">
+                                        <span class="team-name">Real Madrid</span>
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/liverpool.png" alt="">
+                                        <span class="team-name">Liverpool</span>
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-matche-container">
+                        <h3 class="caption">4º Jogo</h3>
+                        <table class="table-matches">
+                            <thead>
+                                <tr>
+                                    <th>Equipes</th>
+                                    <th>1º Mão</th>
+                                    <th>2º Mão</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/porto.png" alt="">
+                                        <span class="team-name">Porto</span>
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                </tr>
+                                <tr class="passed">
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/chelsea.png" alt="">
+                                        <span class="team-name">Chelsea</span>
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="container-pre-final oitavos filter">
+                    <h3 class="label-fase">Oitavas de Finais</h3>
+                    <div class="table-matche-container">
+                        <h3 class="caption">1º Jogo</h3>
+                        <table class="table-matches">
+                            <thead>
+                                <tr>
+                                    <th>Equipes</th>
+                                    <th>1º Mão</th>
+                                    <th>2º Mão</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/lazio.png" alt="">
+                                        <span class="team-name">Lazio</span>
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                </tr>
+                                <tr class="passed">
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/bayern.png" alt="">
+                                        <span class="team-name">Bayern de Munique</span>
+                                    </td>
+                                    <td>
+                                        4
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        6
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-matche-container">
+                        <h3 class="caption">2º Jogo</h3>
+                        <table class="table-matches">
+                            <thead>
+                                <tr>
+                                    <th>Equipes</th>
+                                    <th>1º Mão</th>
+                                    <th>2º Mão</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/barcelona.png" alt="">
+                                        <span class="team-name">Barcelona</span>
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                </tr>
+                                <tr class="passed">
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/psg.png" alt="">
+                                        <span class="team-name">Paris Saint-Germain</span>
+                                    </td>
+                                    <td>
+                                        4
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        5
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-matche-container">
+                        <h3 class="caption">3º Jogo</h3>
+                        <table class="table-matches">
+                            <thead>
+                                <tr>
+                                    <th>Equipes</th>
+                                    <th>1º Mão</th>
+                                    <th>2º Mão</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/monch.png" alt="">
+                                        <span class="team-name">Borussia Mönchengladbach</span>
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                </tr>
+                                <tr class="passed">
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/mancity.png" alt="">
+                                        <span class="team-name">Manchester City</span>
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        4
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-matche-container">
+                        <h3 class="caption">4º Jogo</h3>
+                        <table class="table-matches">
+                            <thead>
+                                <tr>
+                                    <th>Equipes</th>
+                                    <th>1º Mão</th>
+                                    <th>2º Mão</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/sevilla.png" alt="">
+                                        <span class="team-name">Sevilla</span>
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        4
+                                    </td>
+                                </tr>
+                                <tr class="passed">
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/dortmund.png" alt="">
+                                        <span class="team-name">Borussia Dortmund</span>
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        5
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-matche-container">
+                        <h3 class="caption">5º Jogo</h3>
+                        <table class="table-matches">
+                            <thead>
+                                <tr>
+                                    <th>Equipes</th>
+                                    <th>1º Mão</th>
+                                    <th>2º Mão</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/atlanta.png" alt="">
+                                        <span class="team-name">Atalanta</span>
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                </tr>
+                                <tr class="passed">
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/real.png" alt="">
+                                        <span class="team-name">Real Madrid</span>
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                    <td>
+                                        4
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-matche-container">
+                        <h3 class="caption">6º Jogo</h3>
+                        <table class="table-matches">
+                            <thead>
+                                <tr>
+                                    <th>Equipes</th>
+                                    <th>1º Mão</th>
+                                    <th>2º Mão</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/leipzig.png" alt="">
+                                        <span class="team-name">RB Leipzig</span>
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                </tr>
+                                <tr class="passed">
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/liverpool.png" alt="">
+                                        <span class="team-name">Liverpool</span>
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        4
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-matche-container">
+                        <h3 class="caption">7º Jogo</h3>
+                        <table class="table-matches">
+                            <thead>
+                                <tr>
+                                    <th>Equipes</th>
+                                    <th>1º Mão</th>
+                                    <th>2º Mão</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="passed">
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/porto.png" alt="">
+                                        <span class="team-name">Porto (gf)</span>
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        4
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/juventos.png" alt="">
+                                        <span class="team-name">Juventos</span>
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                    <td>
+                                        4
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="table-matche-container">
+                        <h3 class="caption">8º Jogo</h3>
+                        <table class="table-matches">
+                            <thead>
+                                <tr>
+                                    <th>Equipes</th>
+                                    <th>1º Mão</th>
+                                    <th>2º Mão</th>
+                                    <th>Total</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/atletico.png" alt="">
+                                        <span class="team-name">Atlético de Madrid</span>
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                    <td>
+                                        0
+                                    </td>
+                                </tr>
+                                <tr class="passed">
+                                    <td class="team-info">
+                                        <img src="/img/logos_teams/chelsea.png" alt="">
+                                        <span class="team-name">Chelsea</span>
+                                    </td>
+                                    <td>
+                                        1
+                                    </td>
+                                    <td>
+                                        2
+                                    </td>
+                                    <td>
+                                        3
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <aside class="stats-aside" role="complementary">
+            <div class="card-player-stat">
+                <h3 class="stat-title">Melhor Marcador</h3>
+                <div class="best-player-winner">
+                    <h4 class="player-name">Haaland</h4>
+                    <img src="/img/players/Haaland.jpg" alt="" class="img-best-player-winner">
+                    <span class="total-count">10 gols</span>
+                    <img src="/img/logos_teams/dortmund.png" class="icon-team-winner" alt="dortmund logo">
+                    <span class="team-name">Dortmund</span>
+                </div>
+                <div class="top-3-player-container">
+                    <div class="info-player-container">
+                        <span class="player-possition">2º</span>
+                        <img src="/img/logos_teams/psg.png" alt="" class="logo-team" title="PSG">
+                        <span class="player-name-sub">Mbappé</span>
+                        <span class="total-count-sub">8 gols</span>
+                    </div>
+                    <div class="info-player-container">
+                        <span class="player-possition">3º</span>
+                        <img src="/img/logos_teams/chelsea.png" alt="" class="logo-team" title="Chelsea">
+                        <span class="player-name-sub">Giroud</span>
+                        <span class="total-count-sub">6 gols</span>
+                    </div>
+                    <div class="info-player-container">
+                        <span class="player-possition">4º</span>
+                        <img src="/img/logos_teams/sevilla.png" alt="" class="logo-team" title="Sevilla">
+                        <span class="player-name-sub">Youssef</span>
+                        <span class="total-count-sub">6 gols</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card-player-stat asist">
+                <h3 class="stat-title">Assistências</h3>
+                <div class="best-player-winner">
+                    <h4 class="player-name">Cuadrado</h4>
+                    <img src="/img/players/juan_cuadrado.jpg" alt="" class="img-best-player-winner">
+                    <span class="total-count">6 assistências</span>
+                    <img src="/img/logos_teams/juventos.png" class="icon-team-winner" alt="dortmund logo">
+                    <span class="team-name">Juventos</span>
+                </div>
+                <div class="top-3-player-container">
+                    <div class="info-player-container">
+                        <span class="player-possition">2º</span>
+                        <img src="/img/logos_teams/mancity.png" alt="" class="logo-team" title="PSG">
+                        <span class="player-name-sub">De Bruyne</span>
+                        <span class="total-count-sub">4 assistências</span>
+                    </div>
+                    <div class="info-player-container">
+                        <span class="player-possition">3º</span>
+                        <img src="/img/logos_teams/bayern.png" alt="" class="logo-team" title="Chelsea">
+                        <span class="player-name-sub">Kimmich</span>
+                        <span class="total-count-sub">4 assistências</span>
+                    </div>
+                    <div class="info-player-container">
+                        <span class="player-possition">4º</span>
+                        <img src="/img/logos_teams/dortmund.png" alt="" class="logo-team" title="Sevilla">
+                        <span class="player-name-sub">Sancho</span>
+                        <span class="total-count-sub">3 assistências</span>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </main>
+    <div class="backdrop"></div>
+    <div class="modal-player-youtube">
+        <span class="close">&times;</span>
+        <iframe
+            src=""
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+        ></iframe>
+    </div>
+    <footer class="main-footer" role="contentinfo">
+        &copy; Erickson Vaz, 2022
+    </footer>
+    <script src="/js/script.js"></script>
+</body>
+</html>

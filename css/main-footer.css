@@ -1,0 +1,10 @@
+.main-footer{
+    position: relative;
+    z-index: 2;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.456);
+    padding: 30px;
+    opacity: .5;
+}

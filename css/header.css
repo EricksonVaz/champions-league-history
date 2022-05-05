@@ -1,0 +1,114 @@
+.main-header{
+    position: relative;
+    z-index: 2;
+    margin-top: 1rem;
+}
+.logo-ucl-header{
+    width: 13rem;
+    margin: 0 auto;
+    display: block;
+}
+.sub-header{
+    display: flex;
+    border: 1px solid rgba(169, 169, 169, 0.668);
+    background-color: #05134d95;
+    max-width: 1140px;
+    margin: 3rem auto 2rem auto;
+    color: white;
+    align-items: center;
+    padding: 1rem;
+}
+.sub-header>div{
+    flex-basis: 33.33%;
+}
+.seasson-select-label{
+    font-size: 5rem;
+    padding-left: 8rem;
+}
+.info-city-final{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+}
+.label-city{
+    font-size: 3rem;
+}
+.city-name{
+    font-size: 5rem;
+    margin: 2rem 0;
+}
+.more-info-place,.aditional-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.aditional-info img{
+    width: 20px;
+    margin: 1rem;
+}
+.label-name{
+    font-size: 1.4rem;
+}
+.info-finalist-teams{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: flex-end;
+    padding-right: 8rem;
+}
+.info-finalist-teams>div{
+    min-width: 90px;
+}
+.info-finalist-teams img{
+    padding: 1rem;
+}
+.winner-container img{
+    width: 90px;
+}
+.vice-container{
+    margin: 1rem 0;
+}
+.vice-container img{
+    width: 70px;
+}
+.winner-container,.vice-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.team-name{
+    font-size: 1.3rem;
+}
+@media all and (max-width:1200px){
+    .sub-header{
+        max-width: 95%;
+    }
+}
+@media all and (max-width:830px){
+    .sub-header{
+        flex-direction: column;
+    }
+    .sub-header>div{
+        width: 100%;
+        text-align: center;
+        padding: 0;
+    }
+    .seasson-select-label{
+        padding: 0;
+        margin-bottom: 5rem;
+        font-size: 4rem;
+    }
+    .info-finalist-teams{
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    .info-finalist-teams img{
+        width: 90px;
+        padding: 1rem;
+    }
+    .vice-container{
+        margin: 0;
+    }
+}
